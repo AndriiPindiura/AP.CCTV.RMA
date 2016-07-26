@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft FrontPage 5.0">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<TITLE></TITLE>
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+
+
+function main()
+{
+try
+    {
+	//var obj = new ActiveXObject("AP.CCTV.RMA.Client");
+	var obj = document.APCCTVMonitor;
+	obj.Connect("10.100.80.222", 1, 0, false);
+
+    }
+    catch(Err)
+    { 
+        alert(Err.description);
+    }
+
+	
+}
+
+
+</SCRIPT>
+</HEAD>
+<BODY
+      
+onload="main()" ><!--
+	-->
+   
+        <object classid="clsid:CCC33404-40B2-4483-8769-380674478086" id="APCCTVMonitor" VIEWASTEXT codebase="APCCT.cab" />
+
+</BODY>
+</HTML>

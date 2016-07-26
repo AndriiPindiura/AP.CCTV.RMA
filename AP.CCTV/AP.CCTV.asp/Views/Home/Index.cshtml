@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    // ViewBag.Title = "Home Page";
+}
+<html>
+<head>
+    <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title></title>
+    <script id=clientEventHandlersJS language=javascript>
+
+
+function main()
+{
+try
+    {
+	//var obj = new ActiveXObject("AP.CCTV.RMA.Client");
+	var obj = document.APCCTVMonitor;
+	obj.Connect("10.100.80.222", 1, 0, false);
+
+    }
+    catch(Err)
+    {
+        alert(Err.description);
+    }
+
+
+}
+
+
+    </script>
+</head>
+<body onload="main()">
+    <object classid="clsid:CCC33404-40B2-4483-8769-380674478086" id="APCCTVMonitor" viewastext codebase="~/APCCT.cab" />
+    <a href="~/AP.CCTV.Monitor.html">AP.CCTV.Monitor</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="AP.CCTV.RMA.Installer.ProgressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AP.CCTV.RMA.Installer"
+        mc:Ignorable="d"
+        Title="Install..." Height="300" Width="525" Loaded="Window_Loaded" Icon="Resources/intellect.png" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid>
+        <StackPanel>
+            <Image Source="Resources/ap2.png" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Opacity="0.7"/>
+                <StackPanel Orientation="Vertical">
+                    <TextBox FontSize="10" x:Name="status" Height="100" TextChanged="status_TextChanged" Margin="10,20,10,0"/>
+                </StackPanel>
+            <ProgressBar Height="22" Margin="10,10,10,10" x:Name="progress" />
+        </StackPanel>
+
+    </Grid>
+</Window>
